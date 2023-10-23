@@ -6,11 +6,11 @@ const mostPopularMovie = (name) => {
   const stack = [name];
   // initilize a set to keep track of names "visited" already
   let visited = new Set([name]);
-  //initalize an obj to keep track of the number of times a movie appears
+  // initalize an obj to keep track of the number of times a movie appears
   const movieCount = {};
 
-  // while we stil have names in the stack,
-  //grab the last name added and include their movies in the count
+  // while we still have names in the stack,
+  // grab the last name added and include their movies in the count
   while (stack.length) {
     let name = stack.pop();
     let currentUser = allUsers[name];
